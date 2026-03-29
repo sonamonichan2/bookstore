@@ -1,3 +1,12 @@
+WARNING: A restricted method in java.lang.System has been called
+WARNING: java.lang.System::load has been called by org.fusesource.jansi.internal.JansiLoader in an unnamed module (file:/home/ec2-user/tools/maven-3.8.8/lib/jansi-2.4.0.jar)
+WARNING: Use --enable-native-access=ALL-UNNAMED to avoid a warning for callers in this module
+WARNING: Restricted methods will be blocked in a future release unless native access is enabled
+
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::objectFieldOffset has been called by com.google.common.util.concurrent.AbstractFuture$UnsafeAtomicHelper (file:/home/ec2-user/tools/maven-3.8.8/lib/guava-25.1-android.jar)
+WARNING: Please consider reporting this to the maintainers of class com.google.common.util.concurrent.AbstractFuture$UnsafeAtomicHelper
+WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
 [INFO] Scanning for projects...
 [INFO] 
 [INFO] ------< com.example.bookstore:bookstore-struts2-spring-hibernate >------
@@ -12,15 +21,15 @@
 [INFO] Using 'UTF-8' encoding to copy filtered resources.
 [INFO] Copying 6 resources
 [INFO] 
-[INFO] --- maven-compiler-plugin:3.13.0:compile (default-compile) @ bookstore-struts2-spring-hibernate ---
+[INFO] --- maven-compiler-plugin:3.15.0:compile (default-compile) @ bookstore-struts2-spring-hibernate ---
 [INFO] Recompiling the module because of changed source code.
-[INFO] Compiling 6 source files with javac [debug release 21] to target/classes
+[INFO] Compiling 6 source files with javac [debug release 25] to target/classes
 [INFO] 
 [INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ bookstore-struts2-spring-hibernate ---
 [INFO] Using 'UTF-8' encoding to copy filtered resources.
 [INFO] skip non existing resourceDirectory /home/ec2-user/bookstore/src/test/resources
 [INFO] 
-[INFO] --- maven-compiler-plugin:3.13.0:testCompile (default-testCompile) @ bookstore-struts2-spring-hibernate ---
+[INFO] --- maven-compiler-plugin:3.15.0:testCompile (default-testCompile) @ bookstore-struts2-spring-hibernate ---
 [INFO] No sources to compile
 [INFO] 
 [INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ bookstore-struts2-spring-hibernate ---
@@ -35,6 +44,6 @@
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD SUCCESS
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time:  5.328 s
-[INFO] Finished at: 2026-03-29T13:06:37Z
+[INFO] Total time:  3.574 s
+[INFO] Finished at: 2026-03-29T13:43:26Z
 [INFO] ------------------------------------------------------------------------

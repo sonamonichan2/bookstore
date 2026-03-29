@@ -1,0 +1,21 @@
+additionalPlanContext: |
+  Upgrade this Maven-based Java web application from Java 21 to Java 25.
+
+
+
+  Keep WAR packaging.
+  Do not convert this application to Spring Boot.
+  Preserve the current project structure, JSP views, Struts actions, Spring wiring, Hibernate persistence flow, and MySQL connectivity.
+
+
+
+  This application is already on the Jakarta-compatible path and should remain fully consistent.
+  Produce a fully consistent Jakarta-compatible WAR for Tomcat 10 deployment.
+  Do not leave the application in a mixed javax/jakarta state.
+
+
+
+  Keep Struts on the Jakarta-compatible 7.x line and align Spring, Hibernate, JSTL, and web.xml/struts.xml configuration with the Jakarta stack.
+  Update Maven compiler settings, plugins, and dependencies only as needed for Java 25 compatibility.
+  Minimize unnecessary refactoring while ensuring this command succeeds:
+  mvn -DskipTests clean package
