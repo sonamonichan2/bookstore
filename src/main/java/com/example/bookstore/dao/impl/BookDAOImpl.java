@@ -7,6 +7,9 @@ import org.hibernate.SessionFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.transaction.annotation.Transactional;
 
+import jakarta.persistence.criteria.CriteriaBuilder;
+import jakarta.persistence.criteria.CriteriaQuery;
+import jakarta.persistence.criteria.Root;
 import java.util.List;
 
 public class BookDAOImpl implements BookDAO {
@@ -17,9 +20,11 @@ public class BookDAOImpl implements BookDAO {
     @Override
     @Transactional
     public List<Book> getAllBooks() {
-        @SuppressWarnings("unchecked")
-        List<Book> books = (List<Book>) sessionFactory.getCurrentSession()
-                .createCriteria(Book.class).list();
+        CriteriaBuilder cb = sessionFactory.getCurrentSession().getCriteriaBuilder();
+        CriteriaQuery<Book> cq = cb.createQuery(Book.class);
+        Root<Book> root = cq.from(Book.class);
+        cq.select(root);
+        List<Book> books = sessionFactory.getCurrentSession().createQuery(cq).getResultList();
         return books;
     }
 
