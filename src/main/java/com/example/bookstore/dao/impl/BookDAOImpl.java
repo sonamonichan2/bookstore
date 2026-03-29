@@ -3,6 +3,7 @@ package com.example.bookstore.dao.impl;
 
 import com.example.bookstore.dao.BookDAO;
 import com.example.bookstore.hibernate.model.Book;
+import jakarta.persistence.EntityManagerFactory;
 import jakarta.persistence.criteria.CriteriaBuilder;
 import jakarta.persistence.criteria.CriteriaQuery;
 import jakarta.persistence.criteria.Root;
@@ -15,8 +16,13 @@ import java.util.List;
 
 @Repository
 public class BookDAOImpl implements BookDAO {
+
+    private final SessionFactory sessionFactory;
+
     @Autowired
-    private SessionFactory sessionFactory;
+    public BookDAOImpl(EntityManagerFactory entityManagerFactory) {
+        this.sessionFactory = entityManagerFactory.unwrap(SessionFactory.class);
+    }
 
 
     @Override

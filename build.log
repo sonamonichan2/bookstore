@@ -23,7 +23,7 @@ WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
 [INFO] 
 [INFO] --- maven-compiler-plugin:3.13.0:compile (default-compile) @ bookstore-struts2-spring-hibernate ---
 [INFO] Recompiling the module because of changed source code.
-[INFO] Compiling 8 source files with javac [debug parameters release 25] to target/classes
+[INFO] Compiling 7 source files with javac [debug parameters release 25] to target/classes
 [INFO] 
 [INFO] --- maven-resources-plugin:3.3.1:testResources (default-testResources) @ bookstore-struts2-spring-hibernate ---
 [INFO] skip non existing resourceDirectory /home/ec2-user/bookstore/src/test/resources
@@ -43,6 +43,6 @@ WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD SUCCESS
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time:  3.450 s
-[INFO] Finished at: 2026-03-29T14:57:17Z
+[INFO] Total time:  3.061 s
+[INFO] Finished at: 2026-03-29T15:10:23Z
 [INFO] ------------------------------------------------------------------------
