@@ -1,0 +1,18 @@
+codeRepositoryPath: .
+transformationName: AWS/java-version-upgrade
+buildCommand: mvn -DskipTests clean package
+additionalPlanContext: |
+  Upgrade this Maven-based Java web application to Java 25.
+
+  This is a legacy Struts 2 + Spring 4 + Hibernate 4 application packaged as a WAR.
+  Keep WAR packaging.
+  Do not convert this application to Spring Boot.
+  Preserve the existing project structure, JSP views, Struts actions, Spring wiring, and Hibernate-based persistence flow.
+
+  Update Maven compiler settings, plugins, and dependencies as needed for Java 25 compatibility.
+  Modernize only what is required to make the application build and run on Java 25.
+  If needed, update old ORM, JDBC, servlet, or framework dependencies to Java 25-compatible versions.
+  Preserve behavior as much as possible.
+
+  After transformation, ensure the project still builds with:
+  mvn -DskipTests clean package

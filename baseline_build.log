@@ -1,0 +1,41 @@
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ------< com.example.bookstore:bookstore-struts2-spring-hibernate >------
+[INFO] Building bookstore-struts2-spring-hibernate 1.0
+[INFO]   from pom.xml
+[INFO] --------------------------------[ war ]---------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ bookstore-struts2-spring-hibernate ---
+[INFO] Deleting /home/ec2-user/bookstore/target
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ bookstore-struts2-spring-hibernate ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 6 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.1:compile (default-compile) @ bookstore-struts2-spring-hibernate ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 6 source files to /home/ec2-user/bookstore/target/classes
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ bookstore-struts2-spring-hibernate ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /home/ec2-user/bookstore/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.1:testCompile (default-testCompile) @ bookstore-struts2-spring-hibernate ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ bookstore-struts2-spring-hibernate ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- maven-war-plugin:3.2.2:war (default-war) @ bookstore-struts2-spring-hibernate ---
+[INFO] Packaging webapp
+[INFO] Assembling webapp [bookstore-struts2-spring-hibernate] in [/home/ec2-user/bookstore/target/bookstore-struts2-spring-hibernate-1.0]
+[INFO] Processing war project
+[INFO] Copying webapp resources [/home/ec2-user/bookstore/src/main/webapp]
+[INFO] Webapp assembled in [78 msecs]
+[INFO] Building war: /home/ec2-user/bookstore/target/bookstore-struts2-spring-hibernate-1.0.war
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  2.923 s
+[INFO] Finished at: 2026-03-29T09:22:53Z
+[INFO] ------------------------------------------------------------------------
