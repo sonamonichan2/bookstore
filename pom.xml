@@ -50,11 +50,11 @@
             <artifactId>struts2-spring-plugin</artifactId>
             <version>7.0.0</version>
         </dependency>
-        <!-- hibernate 4 -->
+        <!-- hibernate 6 -->
         <dependency>
-            <groupId>org.hibernate</groupId>
+            <groupId>org.hibernate.orm</groupId>
             <artifactId>hibernate-core</artifactId>
-            <version>4.3.8.Final</version>
+            <version>6.4.10.Final</version>
         </dependency>
         <!-- MySQL Connector/J -->
         <dependency>

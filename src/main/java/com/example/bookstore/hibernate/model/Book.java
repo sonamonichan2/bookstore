@@ -1,6 +1,6 @@
 package com.example.bookstore.hibernate.model;
 
-import javax.persistence.*;
+import jakarta.persistence.*;
 
 @Entity
 @Table(name = "books")
