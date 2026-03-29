@@ -4,7 +4,7 @@ import com.example.bookstore.dao.BookDAO;
 import com.example.bookstore.dao.impl.BookDAOImpl;
 import com.example.bookstore.hibernate.model.Book;
 import com.example.bookstore.service.BookService;
-import com.opensymphony.xwork2.ActionSupport;
+import org.apache.struts2.ActionSupport;
 import org.springframework.beans.factory.annotation.Autowired;
 
 import java.util.List;
