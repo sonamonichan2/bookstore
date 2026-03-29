@@ -1,0 +1,10 @@
+additionalPlanContext: |
+  Upgrade this Maven-based Java web application from Java 8 to Java 21.
+  Keep WAR packaging.
+  Do not convert to Spring Boot.
+  Preserve Struts, Spring, Hibernate, JSP views, MySQL connectivity, and current project structure.
+  Jakarta migration is required.
+  Produce a fully consistent Jakarta-compatible WAR for Tomcat 10 deployment.
+  Do not leave the application in a mixed javax/jakarta state.
+  Upgrade Struts to the Jakarta-compatible 7.x line, update imports from com.opensymphony.xwork2 to the appropriate org.apache.struts2 packages where required, migrate javax.* servlet and persistence references to jakarta.*, and align Spring, Hibernate, JSTL, and web.xml/struts.xml configuration with the Jakarta stack.
+  Minimize unnecessary refactoring while ensuring mvn -DskipTests clean package succeeds.
