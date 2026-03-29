@@ -5,7 +5,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Book List</title>
-    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
 </head>
 <body>
     <h1>Book List</h1>
