@@ -5,11 +5,11 @@
 <head>
     <meta charset="UTF-8">
     <title>Add Book</title>
-     <link rel="stylesheet" type="text/css" href="/css/style.css">
+    <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/css/style.css">
 </head>
 <body>
     <h1>Add Book</h1>
-    <form:form action="/saveBook" method="post" modelAttribute="book" cssClass="book-form">
+    <form:form action="${pageContext.request.contextPath}/saveBook" method="post" modelAttribute="book" cssClass="book-form">
         <label>Title</label>
         <form:input path="title" size="40"/>
         <br/>
@@ -19,6 +19,6 @@
         <input type="submit" value="Add Book">
     </form:form>
     <br>
-    <a href="/bookList">Back to Book List</a>
+    <a href="${pageContext.request.contextPath}/bookList">Back to Book List</a>
 </body>
 </html>
