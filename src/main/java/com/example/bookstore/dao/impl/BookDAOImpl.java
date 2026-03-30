@@ -3,49 +3,54 @@ package com.example.bookstore.dao.impl;
 
 import com.example.bookstore.dao.BookDAO;
 import com.example.bookstore.hibernate.model.Book;
-import org.hibernate.SessionFactory;
-import org.springframework.beans.factory.annotation.Autowired;
+import jakarta.persistence.EntityManager;
+import jakarta.persistence.PersistenceContext;
+import jakarta.persistence.criteria.CriteriaBuilder;
+import jakarta.persistence.criteria.CriteriaQuery;
+import jakarta.persistence.criteria.Root;
+import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
 
+@Repository
 public class BookDAOImpl implements BookDAO {
-    @Autowired
-    private SessionFactory sessionFactory;
+    @PersistenceContext
+    private EntityManager entityManager;
 
 
     @Override
     @Transactional
     public List<Book> getAllBooks() {
-        @SuppressWarnings("unchecked")
-        List<Book> books = (List<Book>) sessionFactory.getCurrentSession()
-                .createCriteria(Book.class).list();
-        return books;
+        CriteriaBuilder cb = entityManager.getCriteriaBuilder();
+        CriteriaQuery<Book> cq = cb.createQuery(Book.class);
+        Root<Book> root = cq.from(Book.class);
+        cq.select(root);
+        return entityManager.createQuery(cq).getResultList();
     }
 
     @Override
     @Transactional
     public Book getBookById(int id) {
-        return (Book) sessionFactory.getCurrentSession().get(Book.class, id);
+        return entityManager.find(Book.class, id);
     }
 
     @Override
     @Transactional
     public void addBook(Book book) {
-        sessionFactory.getCurrentSession().save(book);
+        entityManager.persist(book);
     }
 
     @Override
     @Transactional
     public void updateBook(Book book) {
-        sessionFactory.getCurrentSession().update(book);
+        entityManager.merge(book);
     }
 
     @Override
     @Transactional
     public void deleteBook(int id) {
-        Book book = (Book) sessionFactory.getCurrentSession().get(Book.class, id);
-        sessionFactory.getCurrentSession().delete(book);
+        Book book = entityManager.find(Book.class, id);
+        entityManager.remove(book);
     }
 }
-

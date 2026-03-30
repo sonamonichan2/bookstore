@@ -18,43 +18,18 @@ WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
 [INFO] Deleting /home/ec2-user/bookstore/target
 [INFO] 
 [INFO] --- maven-resources-plugin:3.3.1:resources (default-resources) @ bookstore-struts2-spring-hibernate ---
-[INFO] Copying 0 resource from src/main/resources to target/classes
+[INFO] Copying 1 resource from src/main/resources to target/classes
 [INFO] Copying 6 resources from src/main/resources to target/classes
 [INFO] 
 [INFO] --- maven-compiler-plugin:3.13.0:compile (default-compile) @ bookstore-struts2-spring-hibernate ---
 [INFO] Recompiling the module because of changed source code.
-[INFO] Compiling 6 source files with javac [debug parameters release 17] to target/classes
-[INFO] /home/ec2-user/bookstore/src/main/java/com/example/bookstore/dao/impl/BookDAOImpl.java: /home/ec2-user/bookstore/src/main/java/com/example/bookstore/dao/impl/BookDAOImpl.java uses or overrides a deprecated API.
-[INFO] /home/ec2-user/bookstore/src/main/java/com/example/bookstore/dao/impl/BookDAOImpl.java: Recompile with -Xlint:deprecation for details.
+[INFO] Compiling 7 source files with javac [debug parameters release 17] to target/classes
 [INFO] -------------------------------------------------------------
 [ERROR] COMPILATION ERROR : 
 [INFO] -------------------------------------------------------------
 [ERROR] /home/ec2-user/bookstore/src/main/java/com/example/bookstore/action/BookAction.java:[7,31] package com.opensymphony.xwork2 does not exist
 [ERROR] /home/ec2-user/bookstore/src/main/java/com/example/bookstore/action/BookAction.java:[12,33] cannot find symbol
   symbol: class ActionSupport
-[ERROR] /home/ec2-user/bookstore/src/main/java/com/example/bookstore/hibernate/model/Book.java:[5,2] cannot find symbol
-  symbol: class Entity
-[ERROR] /home/ec2-user/bookstore/src/main/java/com/example/bookstore/hibernate/model/Book.java:[6,2] cannot find symbol
-  symbol: class Table
-[ERROR] /home/ec2-user/bookstore/src/main/java/com/example/bookstore/hibernate/model/Book.java:[3,13] package javax.persistence does not exist
-[ERROR] /home/ec2-user/bookstore/src/main/java/com/example/bookstore/hibernate/model/Book.java:[9,6] cannot find symbol
-  symbol:   class Id
-  location: class com.example.bookstore.hibernate.model.Book
-[ERROR] /home/ec2-user/bookstore/src/main/java/com/example/bookstore/hibernate/model/Book.java:[10,6] cannot find symbol
-  symbol:   class GeneratedValue
-  location: class com.example.bookstore.hibernate.model.Book
-[ERROR] /home/ec2-user/bookstore/src/main/java/com/example/bookstore/hibernate/model/Book.java:[10,32] cannot find symbol
-  symbol:   variable GenerationType
-  location: class com.example.bookstore.hibernate.model.Book
-[ERROR] /home/ec2-user/bookstore/src/main/java/com/example/bookstore/hibernate/model/Book.java:[11,6] cannot find symbol
-  symbol:   class Column
-  location: class com.example.bookstore.hibernate.model.Book
-[ERROR] /home/ec2-user/bookstore/src/main/java/com/example/bookstore/hibernate/model/Book.java:[13,6] cannot find symbol
-  symbol:   class Column
-  location: class com.example.bookstore.hibernate.model.Book
-[ERROR] /home/ec2-user/bookstore/src/main/java/com/example/bookstore/hibernate/model/Book.java:[15,6] cannot find symbol
-  symbol:   class Column
-  location: class com.example.bookstore.hibernate.model.Book
 [ERROR] /home/ec2-user/bookstore/src/main/java/com/example/bookstore/action/BookAction.java:[23,16] cannot find symbol
   symbol:   variable SUCCESS
   location: class com.example.bookstore.action.BookAction
@@ -76,44 +51,18 @@ WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
 [ERROR] /home/ec2-user/bookstore/src/main/java/com/example/bookstore/action/BookAction.java:[54,16] cannot find symbol
   symbol:   variable SUCCESS
   location: class com.example.bookstore.action.BookAction
-[ERROR] /home/ec2-user/bookstore/src/main/java/com/example/bookstore/dao/impl/BookDAOImpl.java:[22,17] cannot find symbol
-  symbol:   method createCriteria(java.lang.Class<com.example.bookstore.hibernate.model.Book>)
-  location: interface org.hibernate.Session
-[INFO] 19 errors 
+[INFO] 9 errors 
 [INFO] -------------------------------------------------------------
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD FAILURE
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time:  2.320 s
-[INFO] Finished at: 2026-03-30T11:00:12Z
+[INFO] Total time:  2.346 s
+[INFO] Finished at: 2026-03-30T11:02:50Z
 [INFO] ------------------------------------------------------------------------
 [ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.13.0:compile (default-compile) on project bookstore-struts2-spring-hibernate: Compilation failure: Compilation failure: 
 [ERROR] /home/ec2-user/bookstore/src/main/java/com/example/bookstore/action/BookAction.java:[7,31] package com.opensymphony.xwork2 does not exist
 [ERROR] /home/ec2-user/bookstore/src/main/java/com/example/bookstore/action/BookAction.java:[12,33] cannot find symbol
 [ERROR]   symbol: class ActionSupport
-[ERROR] /home/ec2-user/bookstore/src/main/java/com/example/bookstore/hibernate/model/Book.java:[5,2] cannot find symbol
-[ERROR]   symbol: class Entity
-[ERROR] /home/ec2-user/bookstore/src/main/java/com/example/bookstore/hibernate/model/Book.java:[6,2] cannot find symbol
-[ERROR]   symbol: class Table
-[ERROR] /home/ec2-user/bookstore/src/main/java/com/example/bookstore/hibernate/model/Book.java:[3,13] package javax.persistence does not exist
-[ERROR] /home/ec2-user/bookstore/src/main/java/com/example/bookstore/hibernate/model/Book.java:[9,6] cannot find symbol
-[ERROR]   symbol:   class Id
-[ERROR]   location: class com.example.bookstore.hibernate.model.Book
-[ERROR] /home/ec2-user/bookstore/src/main/java/com/example/bookstore/hibernate/model/Book.java:[10,6] cannot find symbol
-[ERROR]   symbol:   class GeneratedValue
-[ERROR]   location: class com.example.bookstore.hibernate.model.Book
-[ERROR] /home/ec2-user/bookstore/src/main/java/com/example/bookstore/hibernate/model/Book.java:[10,32] cannot find symbol
-[ERROR]   symbol:   variable GenerationType
-[ERROR]   location: class com.example.bookstore.hibernate.model.Book
-[ERROR] /home/ec2-user/bookstore/src/main/java/com/example/bookstore/hibernate/model/Book.java:[11,6] cannot find symbol
-[ERROR]   symbol:   class Column
-[ERROR]   location: class com.example.bookstore.hibernate.model.Book
-[ERROR] /home/ec2-user/bookstore/src/main/java/com/example/bookstore/hibernate/model/Book.java:[13,6] cannot find symbol
-[ERROR]   symbol:   class Column
-[ERROR]   location: class com.example.bookstore.hibernate.model.Book
-[ERROR] /home/ec2-user/bookstore/src/main/java/com/example/bookstore/hibernate/model/Book.java:[15,6] cannot find symbol
-[ERROR]   symbol:   class Column
-[ERROR]   location: class com.example.bookstore.hibernate.model.Book
 [ERROR] /home/ec2-user/bookstore/src/main/java/com/example/bookstore/action/BookAction.java:[23,16] cannot find symbol
 [ERROR]   symbol:   variable SUCCESS
 [ERROR]   location: class com.example.bookstore.action.BookAction
@@ -135,9 +84,6 @@ WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
 [ERROR] /home/ec2-user/bookstore/src/main/java/com/example/bookstore/action/BookAction.java:[54,16] cannot find symbol
 [ERROR]   symbol:   variable SUCCESS
 [ERROR]   location: class com.example.bookstore.action.BookAction
-[ERROR] /home/ec2-user/bookstore/src/main/java/com/example/bookstore/dao/impl/BookDAOImpl.java:[22,17] cannot find symbol
-[ERROR]   symbol:   method createCriteria(java.lang.Class<com.example.bookstore.hibernate.model.Book>)
-[ERROR]   location: interface org.hibernate.Session
 [ERROR] -> [Help 1]
 [ERROR] 
 [ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
