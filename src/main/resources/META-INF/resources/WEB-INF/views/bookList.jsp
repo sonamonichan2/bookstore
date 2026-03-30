@@ -19,9 +19,9 @@
         </tr>
         <c:forEach items="${bookList}" var="book">
             <tr>
-                <td>${book.id}</td>
-                <td>${book.title}</td>
-                <td>${book.author}</td>
+                <td><c:out value="${book.id}"/></td>
+                <td><c:out value="${book.title}"/></td>
+                <td><c:out value="${book.author}"/></td>
                 <td><a href="${pageContext.request.contextPath}/editBook?bookId=${book.id}">Edit</a></td>
                 <td><a href="${pageContext.request.contextPath}/deleteBook?bookId=${book.id}">Delete</a></td>
             </tr>
