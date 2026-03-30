@@ -19,75 +19,30 @@ WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
 [INFO] 
 [INFO] --- maven-resources-plugin:3.3.1:resources (default-resources) @ bookstore-struts2-spring-hibernate ---
 [INFO] Copying 1 resource from src/main/resources to target/classes
-[INFO] Copying 6 resources from src/main/resources to target/classes
+[INFO] Copying 10 resources from src/main/resources to target/classes
 [INFO] 
 [INFO] --- maven-compiler-plugin:3.13.0:compile (default-compile) @ bookstore-struts2-spring-hibernate ---
 [INFO] Recompiling the module because of changed source code.
 [INFO] Compiling 7 source files with javac [debug parameters release 17] to target/classes
-[INFO] -------------------------------------------------------------
-[ERROR] COMPILATION ERROR : 
-[INFO] -------------------------------------------------------------
-[ERROR] /home/ec2-user/bookstore/src/main/java/com/example/bookstore/action/BookAction.java:[7,31] package com.opensymphony.xwork2 does not exist
-[ERROR] /home/ec2-user/bookstore/src/main/java/com/example/bookstore/action/BookAction.java:[12,33] cannot find symbol
-  symbol: class ActionSupport
-[ERROR] /home/ec2-user/bookstore/src/main/java/com/example/bookstore/action/BookAction.java:[23,16] cannot find symbol
-  symbol:   variable SUCCESS
-  location: class com.example.bookstore.action.BookAction
-[ERROR] /home/ec2-user/bookstore/src/main/java/com/example/bookstore/action/BookAction.java:[29,16] cannot find symbol
-  symbol:   variable SUCCESS
-  location: class com.example.bookstore.action.BookAction
-[ERROR] /home/ec2-user/bookstore/src/main/java/com/example/bookstore/action/BookAction.java:[33,16] cannot find symbol
-  symbol:   variable INPUT
-  location: class com.example.bookstore.action.BookAction
-[ERROR] /home/ec2-user/bookstore/src/main/java/com/example/bookstore/action/BookAction.java:[40,20] cannot find symbol
-  symbol:   variable ERROR
-  location: class com.example.bookstore.action.BookAction
-[ERROR] /home/ec2-user/bookstore/src/main/java/com/example/bookstore/action/BookAction.java:[42,16] cannot find symbol
-  symbol:   variable INPUT
-  location: class com.example.bookstore.action.BookAction
-[ERROR] /home/ec2-user/bookstore/src/main/java/com/example/bookstore/action/BookAction.java:[48,16] cannot find symbol
-  symbol:   variable SUCCESS
-  location: class com.example.bookstore.action.BookAction
-[ERROR] /home/ec2-user/bookstore/src/main/java/com/example/bookstore/action/BookAction.java:[54,16] cannot find symbol
-  symbol:   variable SUCCESS
-  location: class com.example.bookstore.action.BookAction
-[INFO] 9 errors 
-[INFO] -------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-resources-plugin:3.3.1:testResources (default-testResources) @ bookstore-struts2-spring-hibernate ---
+[INFO] skip non existing resourceDirectory /home/ec2-user/bookstore/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.13.0:testCompile (default-testCompile) @ bookstore-struts2-spring-hibernate ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:3.5.2:test (default-test) @ bookstore-struts2-spring-hibernate ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- maven-jar-plugin:3.4.2:jar (default-jar) @ bookstore-struts2-spring-hibernate ---
+[INFO] Building jar: /home/ec2-user/bookstore/target/bookstore-struts2-spring-hibernate-1.0.jar
+[INFO] 
+[INFO] --- spring-boot-maven-plugin:3.4.4:repackage (repackage) @ bookstore-struts2-spring-hibernate ---
+[INFO] Replacing main artifact /home/ec2-user/bookstore/target/bookstore-struts2-spring-hibernate-1.0.jar with repackaged archive, adding nested dependencies in BOOT-INF/.
+[INFO] The original artifact has been renamed to /home/ec2-user/bookstore/target/bookstore-struts2-spring-hibernate-1.0.jar.original
 [INFO] ------------------------------------------------------------------------
-[INFO] BUILD FAILURE
+[INFO] BUILD SUCCESS
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time:  2.346 s
-[INFO] Finished at: 2026-03-30T11:02:50Z
+[INFO] Total time:  3.535 s
+[INFO] Finished at: 2026-03-30T11:06:40Z
 [INFO] ------------------------------------------------------------------------
-[ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.13.0:compile (default-compile) on project bookstore-struts2-spring-hibernate: Compilation failure: Compilation failure: 
-[ERROR] /home/ec2-user/bookstore/src/main/java/com/example/bookstore/action/BookAction.java:[7,31] package com.opensymphony.xwork2 does not exist
-[ERROR] /home/ec2-user/bookstore/src/main/java/com/example/bookstore/action/BookAction.java:[12,33] cannot find symbol
-[ERROR]   symbol: class ActionSupport
-[ERROR] /home/ec2-user/bookstore/src/main/java/com/example/bookstore/action/BookAction.java:[23,16] cannot find symbol
-[ERROR]   symbol:   variable SUCCESS
-[ERROR]   location: class com.example.bookstore.action.BookAction
-[ERROR] /home/ec2-user/bookstore/src/main/java/com/example/bookstore/action/BookAction.java:[29,16] cannot find symbol
-[ERROR]   symbol:   variable SUCCESS
-[ERROR]   location: class com.example.bookstore.action.BookAction
-[ERROR] /home/ec2-user/bookstore/src/main/java/com/example/bookstore/action/BookAction.java:[33,16] cannot find symbol
-[ERROR]   symbol:   variable INPUT
-[ERROR]   location: class com.example.bookstore.action.BookAction
-[ERROR] /home/ec2-user/bookstore/src/main/java/com/example/bookstore/action/BookAction.java:[40,20] cannot find symbol
-[ERROR]   symbol:   variable ERROR
-[ERROR]   location: class com.example.bookstore.action.BookAction
-[ERROR] /home/ec2-user/bookstore/src/main/java/com/example/bookstore/action/BookAction.java:[42,16] cannot find symbol
-[ERROR]   symbol:   variable INPUT
-[ERROR]   location: class com.example.bookstore.action.BookAction
-[ERROR] /home/ec2-user/bookstore/src/main/java/com/example/bookstore/action/BookAction.java:[48,16] cannot find symbol
-[ERROR]   symbol:   variable SUCCESS
-[ERROR]   location: class com.example.bookstore.action.BookAction
-[ERROR] /home/ec2-user/bookstore/src/main/java/com/example/bookstore/action/BookAction.java:[54,16] cannot find symbol
-[ERROR]   symbol:   variable SUCCESS
-[ERROR]   location: class com.example.bookstore.action.BookAction
-[ERROR] -> [Help 1]
-[ERROR] 
-[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
-[ERROR] Re-run Maven using the -X switch to enable full debug logging.
-[ERROR] 
-[ERROR] For more information about the errors and possible solutions, please read the following articles:
-[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException

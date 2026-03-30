@@ -5,7 +5,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Book List</title>
-    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
 </head>
 <body>
     <h1>Book List</h1>
@@ -22,12 +22,12 @@
                 <td>${book.id}</td>
                 <td>${book.title}</td>
                 <td>${book.author}</td>
-                <td><a href="editBook?bookId=${book.id}">Edit</a></td>
-                <td><a href="deleteBook?bookId=${book.id}">Delete</a></td>
+                <td><a href="/editBook?bookId=${book.id}">Edit</a></td>
+                <td><a href="/deleteBook?bookId=${book.id}">Delete</a></td>
             </tr>
         </c:forEach>
     </table>
     <br>
-    <a href="addBook">Add New Book</a>
+    <a href="/addBook">Add New Book</a>
 </body>
 </html>
