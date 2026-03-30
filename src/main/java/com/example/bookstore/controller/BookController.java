@@ -23,6 +23,11 @@ public class BookController {
         return "bookList";
     }
 
+    @GetMapping("/test")
+     public @org.springframework.web.bind.annotation.ResponseBody String test() {
+      return "BookController is working";
+    }
+
     @GetMapping("/addBook")
     public String add(Model model) {
         model.addAttribute("book", new Book());
