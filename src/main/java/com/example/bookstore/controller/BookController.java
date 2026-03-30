@@ -16,17 +16,17 @@ public class BookController {
     @Autowired
     private BookService bookService;
 
-    // @GetMapping("/bookList")
-    // public String list(Model model) {
-    //     // Retrieve the list of books from the database
-    //     model.addAttribute("bookList", bookService.getAllBooks());
-    //     return "bookList";
-    // }
-
     @GetMapping("/bookList")
-    public @org.springframework.web.bind.annotation.ResponseBody String list() {
-         return String.valueOf(bookService.getAllBooks());
+    public String list(Model model) {
+        // Retrieve the list of books from the database
+        model.addAttribute("bookList", bookService.getAllBooks());
+        return "bookList";
     }
+
+    // @GetMapping("/bookList")
+    // public @org.springframework.web.bind.annotation.ResponseBody String list() {
+    //      return String.valueOf(bookService.getAllBooks());
+    // }
 
     @GetMapping("/test")
      public @org.springframework.web.bind.annotation.ResponseBody String test() {
